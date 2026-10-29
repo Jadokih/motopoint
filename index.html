@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Motopoint Multimarcas — Concessionária de motos seminovas. Compra, venda, troca e financiamento de motos na Avenida JK, 1649, bairro Bom Pastor.">
+  <meta name="theme-color" content="#080c12">
+  <title>Motopoint Multimarcas | Catálogo de Motos Seminovas</title>
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%2305080d'/%3E%3Cpath d='M6 21l4-10h4l2 5 2-5h4l4 10h-3.5l-2.2-6-2.3 6h-2l-2.3-6-2.2 6H6z' fill='%2300c2ff'/%3E%3C/svg%3E">
+
+  <!-- Google Fonts: Chakra Petch (Display Automotivo) & Plus Jakarta Sans (UI/Corpo) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,600;0,700;1,700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Tela de Carregamento (2 segundos na primeira abertura) -->
+  <div id="loader-screen" class="loader-screen" role="status" aria-live="polite" aria-label="Carregando catálogo da Motopoint Multimarcas">
+    <div class="loader-ambient" aria-hidden="true"></div>
+    <div class="loader-content">
+      <div class="loader-logo-frame">
+        <img
+          src="logo.jpg"
+          alt="Motopoint Multimarcas"
+          class="loader-logo"
+          width="480"
+          height="156"
+        >
+      </div>
+      <div class="loader-progress-track" aria-hidden="true">
+        <div class="loader-progress-bar"></div>
+      </div>
+      <span class="loader-status-text">Preparando estoque...</span>
+    </div>
+  </div>
+
+  <!-- Cabeçalho -->
+  <header class="site-header" id="topo">
+    <div class="container header-inner">
+      <a href="#inicio" class="brand-logo-link" aria-label="Motopoint Multimarcas - Ir para o início">
+        <img
+          src="logo.jpg"
+          alt="Logo Motopoint Multimarcas"
+          class="header-logo"
+          width="240"
+          height="78"
+        >
+      </a>
+
+      <nav class="main-nav" id="main-nav" aria-label="Navegação principal">
+        <ul class="nav-list">
+          <li><a href="#inicio" class="nav-link">Início</a></li>
+          <li><a href="#diferenciais" class="nav-link">Serviços</a></li>
+          <li><a href="#catalogo" class="nav-link">Catálogo</a></li>
+          <li><a href="#contato" class="nav-link">Contato</a></li>
+        </ul>
+        <div class="nav-mobile-cta">
+          <a
+            href="https://wa.me/5537988283536?text=Ol%C3%A1!%20Conheci%20o%20cat%C3%A1logo%20online%20da%20Motopoint%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%20as%20motos%20dispon%C3%ADveis."
+            target="_blank"
+            rel="noopener noreferrer"
+            class="btn btn-whatsapp btn-full"
+          >
+            <svg class="icon-svg" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 7.002c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/></svg>
+            <span>Falar no WhatsApp</span>
+          </a>
+        </div>
+      </nav>
+
+      <div class="header-actions">
+        <a
+          href="https://wa.me/5537988283536?text=Ol%C3%A1!%20Conheci%20o%20cat%C3%A1logo%20online%20da%20Motopoint%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%20as%20motos%20dispon%C3%ADveis."
+          target="_blank"
+          rel="noopener noreferrer"
+          class="btn btn-whatsapp header-wa-btn"
+        >
+          <svg class="icon-svg" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 7.002c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/></svg>
+          <span>Falar no WhatsApp</span>
+        </a>
+
+        <button
+          type="button"
+          class="menu-toggle"
+          id="menu-toggle"
+          aria-expanded="false"
+          aria-controls="main-nav"
+          aria-label="Abrir menu de navegação"
+        >
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Seção Principal (Hero) -->
+    <section class="hero-section" id="inicio">
+      <div class="hero-glow-backdrop" aria-hidden="true"></div>
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <div class="hero-eyebrow">
+            <span class="eyebrow-dot" aria-hidden="true"></span>
+            <span>MOTOPOINT MULTIMARCAS • SEMINOVAS</span>
+          </div>
+
+          <h1 class="hero-title">
+            Sua próxima moto <span class="text-cyan-highlight">está aqui.</span>
+          </h1>
+
+          <p class="hero-subtitle">
+            Motos seminovas para diferentes estilos e necessidades. Confira as opções da Motopoint e encontre a sua.
+          </p>
+
+          <div class="hero-cta-group">
+            <a href="#catalogo" class="btn btn-primary btn-lg">
+              <span>Ver motos disponíveis</span>
+              <svg class="icon-svg" viewBox="0 0 24 24" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M5 12h14m-6-6 6 6-6 6"/></svg>
+            </a>
+
+            <a
+              href="https://wa.me/5537988283536?text=Ol%C3%A1!%20Conheci%20o%20cat%C3%A1logo%20online%20da%20Motopoint%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%20as%20motos%20dispon%C3%ADveis."
+              target="_blank"
+              rel="noopener noreferrer"
+              class="btn btn-outline-cyan btn-lg"
+            >
+              <svg class="icon-svg" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 7.002c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/></svg>
+              <span>Negociar pelo WhatsApp</span>
+            </a>
+          </div>
+
+          <div class="hero-quick-info">
+            <div class="quick-info-item">
+              <svg class="icon-svg text-cyan" viewBox="0 0 24 24" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3" fill="none" stroke="currentColor" stroke-width="2"/></svg>
+              <span>Avenida JK, 1649, bairro Bom Pastor</span>
+            </div>
+            <div class="quick-info-item">
+              <svg class="icon-svg text-cyan" viewBox="0 0 24 24" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+              <span>(37) 98828-3536 • (37) 3213-5184</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-showcase">
+          <div class="hero-photo-frame">
+            <div class="hero-photo-badge">
+              <span class="badge-dot"></span>
+              <span>Destaque no Estoque</span>
+            </div>
+            <img
+              src="catalogo/moto3/Captura de tela 2026-10-29 152517.png"
+              alt="Honda Bros 160 Esdd 2021/2021 disponível na Motopoint Multimarcas"
+              class="hero-main-img"
+              fetchpriority="high"
+              width="865"
+              height="492"
+            >
+            <div class="hero-photo-caption">
+              <div class="caption-details">
+                <span class="caption-tag">Honda • 2021/2021 • 160 cc</span>
+                <strong class="caption-model">Honda Bros 160 Esdd</strong>
+              </div>
+              <div class="caption-price-box">
+                <span class="caption-price">R$ 18.500,00</span>
+                <button type="button" class="caption-link-btn" data-open-moto="moto3">
+                  Detalhes →
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Seção de Diferenciais / Serviços Confirmados -->
+    <section class="services-section" id="diferenciais" aria-labelledby="services-heading">
+      <div class="container">
+        <div class="section-header-compact">
+          <span class="section-kicker">Nossos Serviços</span>
+          <h2 id="services-heading" class="section-title">Soluções completas para sua negociação</h2>
+        </div>
+
+        <div class="services-grid">
+          <article class="service-card">
+            <div class="service-icon-wrap" aria-hidden="true">
+              <svg class="icon-svg" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+            </div>
+            <h3 class="service-title">Compra de motos</h3>
+            <p class="service-desc">Avaliação presencial da sua moto seminova para negociação direta com a nossa loja.</p>
+          </article>
+
+          <article class="service-card">
+            <div class="service-icon-wrap" aria-hidden="true">
+              <svg class="icon-svg" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"/></svg>
+            </div>
+            <h3 class="service-title">Venda de motos</h3>
+            <p class="service-desc">Motos seminovas disponíveis em loja para consulta de características e valores.</p>
+          </article>
+
+          <article class="service-card">
+            <div class="service-icon-wrap" aria-hidden="true">
+              <svg class="icon-svg" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M16 3h5v5M4 20 21 3M21 16v5h-5M15 15l6 6M4 4l5 5"/></svg>
+            </div>
+            <h3 class="service-title">Troca de motos</h3>
+            <p class="service-desc">Possibilidade de negociação envolvendo sua moto na troca por outro modelo do estoque.</p>
+          </article>
+
+          <article class="service-card">
+            <div class="service-icon-wrap" aria-hidden="true">
+              <svg class="icon-svg" viewBox="0 0 24 24"><rect width="20" height="14" x="2" y="5" rx="2" fill="none" stroke="currentColor" stroke-width="2"/><line x1="2" x2="22" y1="10" y2="10" stroke="currentColor" stroke-width="2"/></svg>
+            </div>
+            <h3 class="service-title">Financiamento</h3>
+            <p class="service-desc">Atendimento para consulta de opções de financiamento diretamente com a equipe da loja.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Seção do Catálogo de Motos -->
+    <section class="catalog-section" id="catalogo" aria-labelledby="catalog-heading">
+      <div class="container">
+        <div class="catalog-header">
+          <div>
+            <span class="section-kicker">Estoque Motopoint</span>
+            <h2 id="catalog-heading" class="section-title">Motos Disponíveis</h2>
+            <p class="section-subtitle">Consulte as especificações reais de cada veículo e fale direto com a loja pelo WhatsApp.</p>
+          </div>
+          <div class="catalog-count-badge" id="catalog-count" aria-live="polite">
+            Exibindo 3 motos
+          </div>
+        </div>
+
+        <!-- Barra de Busca e Filtros -->
+        <div class="filter-bar" role="region" aria-label="Filtros do catálogo de motos">
+          <div class="filter-field filter-search">
+            <label for="search-input" class="filter-label">Buscar modelo ou característica</label>
+            <div class="search-input-wrapper">
+              <svg class="search-icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="8" fill="none" stroke="currentColor" stroke-width="2"/><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" d="m21 21-4.3-4.3"/></svg>
+              <input
+                type="search"
+                id="search-input"
+                class="filter-input"
+                placeholder="Ex.: Fan 160, Pop 110i, Bros, Combibrake..."
+                autocomplete="off"
+              >
+            </div>
+          </div>
+
+          <div class="filter-field">
+            <label for="filter-brand" class="filter-label">Marca</label>
+            <select id="filter-brand" class="filter-select">
+              <option value="all">Todas as marcas</option>
+              <option value="Honda">Honda</option>
+            </select>
+          </div>
+
+          <div class="filter-field">
+            <label for="filter-cc" class="filter-label">Cilindrada</label>
+            <select id="filter-cc" class="filter-select">
+              <option value="all">Todas as cilindradas</option>
+              <option value="110 cc">110 cc</option>
+              <option value="160 cc">160 cc</option>
+            </select>
+          </div>
+
+          <div class="filter-field">
+            <label for="filter-price" class="filter-label">Faixa de preço</label>
+            <select id="filter-price" class="filter-select">
+              <option value="all">Todos os valores</option>
+              <option value="up-to-12000">Até R$ 12.000</option>
+              <option value="12000-to-15000">De R$ 12.000 a R$ 15.000</option>
+              <option value="above-15000">Acima de R$ 15.000</option>
+            </select>
+          </div>
+
+          <div class="filter-field">
+            <label for="filter-sort" class="filter-label">Ordenar por</label>
+            <select id="filter-sort" class="filter-select">
+              <option value="default">Destaques da loja</option>
+              <option value="price-asc">Menor preço</option>
+              <option value="price-desc">Maior preço</option>
+              <option value="year-desc">Ano mais novo</option>
+            </select>
+          </div>
+
+          <div class="filter-actions">
+            <button type="button" id="reset-filters-btn" class="btn btn-secondary btn-reset">
+              Limpar filtros
+            </button>
+          </div>
+        </div>
+
+        <!-- Grade de Cards do Catálogo -->
+        <div id="catalog-grid" class="catalog-grid" aria-live="polite">
+          <!-- Renderizado via app.js a partir dos dados oficiais da pasta catalogo -->
+        </div>
+
+        <!-- Estado Vazio (Quando nenhum resultado corresponde aos filtros) -->
+        <div id="empty-state" class="empty-state" hidden>
+          <div class="empty-state-icon" aria-hidden="true">
+            <svg class="icon-svg" viewBox="0 0 24 24"><circle cx="11" cy="11" r="8" fill="none" stroke="currentColor" stroke-width="2"/><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" d="m21 21-4.3-4.3M8 11h6"/></svg>
+          </div>
+          <h3 class="empty-state-title">Nenhuma moto encontrada com esses critérios</h3>
+          <p class="empty-state-text">
+            Tente ajustar os filtros selecionados ou fale diretamente com a Motopoint no WhatsApp para consultar outras opções.
+          </p>
+          <div class="empty-state-actions">
+            <button type="button" id="empty-reset-btn" class="btn btn-primary">
+              Ver todas as motos disponíveis
+            </button>
+            <a
+              href="https://wa.me/5537988283536?text=Ol%C3%A1!%20Conheci%20o%20cat%C3%A1logo%20online%20da%20Motopoint%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%20as%20motos%20dispon%C3%ADveis."
+              target="_blank"
+              rel="noopener noreferrer"
+              class="btn btn-outline-cyan"
+            >
+              <svg class="icon-svg" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 7.002c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/></svg>
+              <span>Consultar pelo WhatsApp</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Seção de Contato -->
+    <section class="contact-section" id="contato" aria-labelledby="contact-heading">
+      <div class="container">
+        <div class="contact-panel">
+          <div class="contact-info-col">
+            <span class="section-kicker">Atendimento & Localização</span>
+            <h2 id="contact-heading" class="section-title">Entre em contato com a Motopoint</h2>
+            <p class="contact-lead">
+              Prefere negociar pelo WhatsApp, ligar no telefone fixo ou visitar nossa loja presencialmente? Confira os canais oficiais da Motopoint Multimarcas.
+            </p>
+
+            <div class="contact-cards-list">
+              <!-- Endereço -->
+              <div class="contact-item-card">
+                <div class="contact-item-icon" aria-hidden="true">
+                  <svg class="icon-svg" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3" fill="none" stroke="currentColor" stroke-width="2"/></svg>
+                </div>
+                <div class="contact-item-body">
+                  <span class="contact-item-label">Endereço da loja</span>
+                  <strong class="contact-item-value">Avenida JK, 1649, bairro Bom Pastor</strong>
+                </div>
+              </div>
+
+              <!-- WhatsApp -->
+              <a
+                href="https://wa.me/5537988283536?text=Ol%C3%A1!%20Conheci%20o%20cat%C3%A1logo%20online%20da%20Motopoint%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%20as%20motos%20dispon%C3%ADveis."
+                target="_blank"
+                rel="noopener noreferrer"
+                class="contact-item-card contact-item-interactive"
+              >
+                <div class="contact-item-icon icon-wa" aria-hidden="true">
+                  <svg class="icon-svg" viewBox="0 0 24 24"><path fill="currentColor" d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 7.002c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/></svg>
+                </div>
+                <div class="contact-item-body">
+                  <span class="contact-item-label">WhatsApp</span>
+                  <strong class="contact-item-value">(37) 98828-3536</strong>
+                  <span class="contact-item-action">Iniciar conversa agora →</span>
+                </div>
+              </a>
+
+              <!-- Telefone Fixo -->
+              <a href="tel:+553732135184" class="contact-item-card contact-item-interactive">
+                <div class="contact-item-icon" aria-hidden="true">
+                  <svg class="icon-svg" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                </div>
+                <div class="contact-item-body">
+                  <span class="contact-item-label">Telefone fixo</span>
+                  <strong class="contact-item-value">(37) 3213-5184</strong>
+                  <span class="contact-item-action">Ligar para a loja →</span>
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <div class="contact-cta-col">
+            <div class="contact-cta-box">
+              <img
+                src="logo.jpg"
+                alt="Motopoint Multimarcas"
+                class="contact-box-logo"
+                loading="lazy"
+                width="260"
+                height="84"
+              >
+              <h3 class="contact-box-title">Pronto para negociar sua próxima moto?</h3>
+              <p class="contact-box-text">
+                Fale com o atendimento da Motopoint Multimarcas pelo WhatsApp para consultar disponibilidade, compra, venda, troca ou financiamento.
+              </p>
+              <a
+                href="https://wa.me/5537988283536?text=Ol%C3%A1!%20Conheci%20o%20cat%C3%A1logo%20online%20da%20Motopoint%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%20as%20motos%20dispon%C3%ADveis."
+                target="_blank"
+                rel="noopener noreferrer"
+                class="btn btn-whatsapp btn-lg btn-full"
+              >
+                <svg class="icon-svg" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 7.002c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/></svg>
+                <span>Falar com a loja no WhatsApp</span>
+              </a>
+              <a href="tel:+553732135184" class="btn btn-secondary btn-full">
+                Ligar no fixo: (37) 3213-5184
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Rodapé -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <img
+          src="logo.jpg"
+          alt="Logo Motopoint Multimarcas"
+          class="footer-logo"
+          loading="lazy"
+          width="220"
+          height="71"
+        >
+        <p class="footer-tagline">
+          <strong>Motopoint Multimarcas</strong> — Concessionária de motos seminovas. Compra, venda, troca e financiamento de motos.
+        </p>
+      </div>
+
+      <div class="footer-nav-col">
+        <h3 class="footer-heading">Navegação</h3>
+        <ul class="footer-links">
+          <li><a href="#inicio">Início</a></li>
+          <li><a href="#diferenciais">Serviços</a></li>
+          <li><a href="#catalogo">Catálogo de Motos</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-contact-col">
+        <h3 class="footer-heading">Dados da Loja</h3>
+        <ul class="footer-contact-list">
+          <li>
+            <span>Endereço:</span>
+            <strong>Avenida JK, 1649, bairro Bom Pastor</strong>
+          </li>
+          <li>
+            <span>WhatsApp:</span>
+            <a href="https://wa.me/5537988283536?text=Ol%C3%A1!%20Conheci%20o%20cat%C3%A1logo%20online%20da%20Motopoint%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%20as%20motos%20dispon%C3%ADveis." target="_blank" rel="noopener noreferrer">(37) 98828-3536</a>
+          </li>
+          <li>
+            <span>Telefone fixo:</span>
+            <a href="tel:+553732135184">(37) 3213-5184</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="container footer-bottom">
+      <p>© Motopoint Multimarcas. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+  <!-- Modal / Janela de Detalhes da Moto (HTML5 <dialog> com closedby="any" + fallback) -->
+  <dialog id="moto-modal" class="moto-modal" closedby="any" aria-labelledby="modal-moto-title">
+    <div class="modal-inner" id="modal-inner-content">
+      <div class="modal-header-bar">
+        <span class="modal-brand-pill" id="modal-moto-brand">Honda</span>
+        <button type="button" class="modal-close-btn" id="modal-close-btn" aria-label="Fechar janela de detalhes">
+          <svg class="icon-svg" viewBox="0 0 24 24" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" d="M18 6 6 18M6 6l12 12"/></svg>
+        </button>
+      </div>
+
+      <div class="modal-body-grid">
+        <div class="modal-gallery-col">
+          <div class="modal-image-stage">
+            <img
+              id="modal-moto-img"
+              src="catalogo/moto1/Captura de tela 2026-10-29 152350.png"
+              alt=""
+              class="modal-main-image"
+            >
+          </div>
+        </div>
+
+        <div class="modal-info-col">
+          <h2 id="modal-moto-title" class="modal-title">Honda Fan 160 Flex</h2>
+          <div class="modal-price-highlight" id="modal-moto-price">R$ 13.900,00</div>
+
+          <div class="modal-specs-grid" id="modal-moto-specs">
+            <!-- Preenchido dinamicamente pelo JS com os dados disponíveis -->
+          </div>
+
+          <div class="modal-features-section">
+            <h3 class="modal-features-heading">Detalhes</h3>
+            <ul class="modal-features-list" id="modal-moto-features">
+              <!-- Preenchido dinamicamente pelo JS -->
+            </ul>
+          </div>
+
+          <div class="modal-cta-group">
+            <a
+              id="modal-whatsapp-btn"
+              href="https://wa.me/5537988283536?text=Ol%C3%A1!%20Vi%20a%20Honda%20Fan%20160%20Flex%20no%20cat%C3%A1logo%20da%20Motopoint%20e%20gostaria%20de%20saber%20mais%20informa%C3%A7%C3%B5es."
+              target="_blank"
+              rel="noopener noreferrer"
+              class="btn btn-whatsapp btn-lg btn-full"
+            >
+              <svg class="icon-svg" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 7.002c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/></svg>
+              <span>Tenho interesse — Negociar no WhatsApp</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </dialog>
+
+  <!-- Botão Flutuante de WhatsApp -->
+  <a
+    href="https://wa.me/5537988283536?text=Ol%C3%A1!%20Conheci%20o%20cat%C3%A1logo%20online%20da%20Motopoint%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%20as%20motos%20dispon%C3%ADveis."
+    target="_blank"
+    rel="noopener noreferrer"
+    class="floating-wa-btn"
+    aria-label="Falar com a Motopoint Multimarcas no WhatsApp"
+  >
+    <svg class="icon-svg" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 7.002c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/></svg>
+    <span class="floating-wa-label">WhatsApp</span>
+  </a>
+
+  <script src="app.js"></script>
+</body>
+</html>
